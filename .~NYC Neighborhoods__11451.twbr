@@ -1,0 +1,2153 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.1110.1623                               -->
+<workbook source-build='2020.3.3 (20203.20.1110.1623)' source-platform='mac' version='18.1' xml:base='https://dub01.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='301Lab10' path='/t/data301dashboards/workbooks' revision='1.0' site='data301dashboards' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='nyc-rolling-sales' inline='true' name='federated.0josalv1nbn8w511pyedm0hlubg2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='nyc-rolling-sales' name='textscan.16bfuha05fos3919n6zhu11ysd8z'>
+            <connection class='textscan' directory='/Users/shreyasi/Desktop' filename='nyc-rolling-sales.csv' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.16bfuha05fos3919n6zhu11ysd8z' name='nyc-rolling-sales.csv' table='[nyc-rolling-sales#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='BOROUGH' ordinal='1' />
+            <column datatype='string' name='NEIGHBORHOOD' ordinal='2' />
+            <column datatype='string' name='BUILDING CLASS CATEGORY' ordinal='3' />
+            <column datatype='string' name='TAX CLASS AT PRESENT' ordinal='4' />
+            <column datatype='integer' name='BLOCK' ordinal='5' />
+            <column datatype='integer' name='LOT' ordinal='6' />
+            <column datatype='string' name='EASE-MENT' ordinal='7' />
+            <column datatype='string' name='BUILDING CLASS AT PRESENT' ordinal='8' />
+            <column datatype='string' name='ADDRESS' ordinal='9' />
+            <column datatype='string' name='APARTMENT NUMBER' ordinal='10' />
+            <column datatype='integer' name='ZIP CODE' ordinal='11' />
+            <column datatype='integer' name='RESIDENTIAL UNITS' ordinal='12' />
+            <column datatype='integer' name='COMMERCIAL UNITS' ordinal='13' />
+            <column datatype='integer' name='TOTAL UNITS' ordinal='14' />
+            <column datatype='real' name='LAND SQUARE FEET' ordinal='15' />
+            <column datatype='real' name='GROSS SQUARE FEET' ordinal='16' />
+            <column datatype='integer' name='YEAR BUILT' ordinal='17' />
+            <column datatype='integer' name='TAX CLASS AT TIME OF SALE' ordinal='18' />
+            <column datatype='string' name='BUILDING CLASS AT TIME OF SALE' ordinal='19' />
+            <column datatype='real' name='SALE PRICE' ordinal='20' />
+            <column datatype='datetime' name='SALE DATE' ordinal='21' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.16bfuha05fos3919n6zhu11ysd8z' name='nyc-rolling-sales.csv' table='[nyc-rolling-sales#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='BOROUGH' ordinal='1' />
+            <column datatype='string' name='NEIGHBORHOOD' ordinal='2' />
+            <column datatype='string' name='BUILDING CLASS CATEGORY' ordinal='3' />
+            <column datatype='string' name='TAX CLASS AT PRESENT' ordinal='4' />
+            <column datatype='integer' name='BLOCK' ordinal='5' />
+            <column datatype='integer' name='LOT' ordinal='6' />
+            <column datatype='string' name='EASE-MENT' ordinal='7' />
+            <column datatype='string' name='BUILDING CLASS AT PRESENT' ordinal='8' />
+            <column datatype='string' name='ADDRESS' ordinal='9' />
+            <column datatype='string' name='APARTMENT NUMBER' ordinal='10' />
+            <column datatype='integer' name='ZIP CODE' ordinal='11' />
+            <column datatype='integer' name='RESIDENTIAL UNITS' ordinal='12' />
+            <column datatype='integer' name='COMMERCIAL UNITS' ordinal='13' />
+            <column datatype='integer' name='TOTAL UNITS' ordinal='14' />
+            <column datatype='real' name='LAND SQUARE FEET' ordinal='15' />
+            <column datatype='real' name='GROSS SQUARE FEET' ordinal='16' />
+            <column datatype='integer' name='YEAR BUILT' ordinal='17' />
+            <column datatype='integer' name='TAX CLASS AT TIME OF SALE' ordinal='18' />
+            <column datatype='string' name='BUILDING CLASS AT TIME OF SALE' ordinal='19' />
+            <column datatype='real' name='SALE PRICE' ordinal='20' />
+            <column datatype='datetime' name='SALE DATE' ordinal='21' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BOROUGH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BOROUGH]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>BOROUGH</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NEIGHBORHOOD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NEIGHBORHOOD]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>NEIGHBORHOOD</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BUILDING CLASS CATEGORY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BUILDING CLASS CATEGORY]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>BUILDING CLASS CATEGORY</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TAX CLASS AT PRESENT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TAX CLASS AT PRESENT]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>TAX CLASS AT PRESENT</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BLOCK</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BLOCK]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>BLOCK</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LOT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LOT]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>LOT</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EASE-MENT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EASE-MENT]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>EASE-MENT</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BUILDING CLASS AT PRESENT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BUILDING CLASS AT PRESENT]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>BUILDING CLASS AT PRESENT</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ADDRESS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ADDRESS]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>ADDRESS</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>APARTMENT NUMBER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[APARTMENT NUMBER]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>APARTMENT NUMBER</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIP CODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ZIP CODE]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>ZIP CODE</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RESIDENTIAL UNITS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RESIDENTIAL UNITS]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>RESIDENTIAL UNITS</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COMMERCIAL UNITS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[COMMERCIAL UNITS]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>COMMERCIAL UNITS</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTAL UNITS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOTAL UNITS]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>TOTAL UNITS</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LAND SQUARE FEET</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LAND SQUARE FEET]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>LAND SQUARE FEET</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GROSS SQUARE FEET</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GROSS SQUARE FEET]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>GROSS SQUARE FEET</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR BUILT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YEAR BUILT]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>YEAR BUILT</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TAX CLASS AT TIME OF SALE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TAX CLASS AT TIME OF SALE]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>TAX CLASS AT TIME OF SALE</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BUILDING CLASS AT TIME OF SALE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BUILDING CLASS AT TIME OF SALE]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>BUILDING CLASS AT TIME OF SALE</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SALE PRICE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SALE PRICE]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>SALE PRICE</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SALE DATE</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[SALE DATE]</local-name>
+            <parent-name>[nyc-rolling-sales.csv]</parent-name>
+            <remote-alias>SALE DATE</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Address' datatype='string' name='[ADDRESS]' role='dimension' type='nominal' />
+      <column caption='Apartment Number' datatype='string' name='[APARTMENT NUMBER]' role='dimension' type='nominal' />
+      <column caption='Block' datatype='integer' name='[BLOCK]' role='measure' type='quantitative' />
+      <column caption='Borough' datatype='integer' name='[BOROUGH]' role='measure' type='quantitative' />
+      <column caption='Building Class At Present' datatype='string' name='[BUILDING CLASS AT PRESENT]' role='dimension' type='nominal' />
+      <column caption='Building Class At Time Of Sale' datatype='string' name='[BUILDING CLASS AT TIME OF SALE]' role='dimension' type='nominal' />
+      <column caption='Building Class Category' datatype='string' name='[BUILDING CLASS CATEGORY]' role='dimension' type='nominal' />
+      <column caption='Commercial Units' datatype='integer' name='[COMMERCIAL UNITS]' role='measure' type='quantitative' />
+      <column caption='Ease-Ment' datatype='string' name='[EASE-MENT]' role='dimension' type='nominal' />
+      <column caption='Gross Square Feet' datatype='real' name='[GROSS SQUARE FEET]' role='dimension' type='ordinal' />
+      <column caption='Land Square Feet' datatype='real' name='[LAND SQUARE FEET]' role='dimension' type='ordinal' />
+      <column caption='Neighborhood' datatype='string' name='[NEIGHBORHOOD]' role='dimension' type='nominal' />
+      <column caption='Residential Units' datatype='integer' name='[RESIDENTIAL UNITS]' role='measure' type='quantitative' />
+      <column caption='Sale Date' datatype='datetime' name='[SALE DATE]' role='dimension' type='ordinal' />
+      <column caption='Sale Price' datatype='real' name='[SALE PRICE]' role='dimension' type='ordinal' />
+      <column caption='Tax Class At Present' datatype='string' name='[TAX CLASS AT PRESENT]' role='dimension' type='nominal' />
+      <column caption='Tax Class At Time Of Sale' datatype='integer' name='[TAX CLASS AT TIME OF SALE]' role='measure' type='quantitative' />
+      <column caption='Total Units' datatype='integer' name='[TOTAL UNITS]' role='measure' type='quantitative' />
+      <column caption='Year Built' datatype='integer' name='[YEAR BUILT]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' caption='Zip Code' datatype='integer' default-format='*00000' name='[ZIP CODE]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='nyc-rolling-sales.csv' datatype='table' name='[__tableau_internal_object_id__].[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]' role='measure' type='quantitative' />
+      <column-instance column='[BUILDING CLASS AT PRESENT]' derivation='None' name='[none:BUILDING CLASS AT PRESENT:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Extracts/federated_0josalv1nbn8w511pyedm0.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='12/06/2020 10:02:54 PM' username=''>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='nyc-rolling-sales' increment-value='%null%' refresh-type='create' rows-inserted='84548' timestamp-start='2020-12-06 22:02:54.309' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36620</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BOROUGH</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BOROUGH]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BOROUGH</remote-alias>
+              <ordinal>1</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NEIGHBORHOOD</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NEIGHBORHOOD]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NEIGHBORHOOD</remote-alias>
+              <ordinal>2</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>464</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BUILDING CLASS CATEGORY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BUILDING CLASS CATEGORY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BUILDING CLASS CATEGORY</remote-alias>
+              <ordinal>3</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>52</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TAX CLASS AT PRESENT</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TAX CLASS AT PRESENT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TAX CLASS AT PRESENT</remote-alias>
+              <ordinal>4</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BLOCK</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BLOCK]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BLOCK</remote-alias>
+              <ordinal>5</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13799</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LOT</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LOT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LOT</remote-alias>
+              <ordinal>6</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1935</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EASE-MENT</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EASE-MENT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EASE-MENT</remote-alias>
+              <ordinal>7</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BUILDING CLASS AT PRESENT</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BUILDING CLASS AT PRESENT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BUILDING CLASS AT PRESENT</remote-alias>
+              <ordinal>8</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>191</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ADDRESS</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ADDRESS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ADDRESS</remote-alias>
+              <ordinal>9</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30647</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>APARTMENT NUMBER</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[APARTMENT NUMBER]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>APARTMENT NUMBER</remote-alias>
+              <ordinal>10</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1808</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ZIP CODE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ZIP CODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ZIP CODE</remote-alias>
+              <ordinal>11</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>267</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RESIDENTIAL UNITS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[RESIDENTIAL UNITS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RESIDENTIAL UNITS</remote-alias>
+              <ordinal>12</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>126</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>COMMERCIAL UNITS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[COMMERCIAL UNITS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COMMERCIAL UNITS</remote-alias>
+              <ordinal>13</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TOTAL UNITS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TOTAL UNITS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TOTAL UNITS</remote-alias>
+              <ordinal>14</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>126</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LAND SQUARE FEET</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LAND SQUARE FEET]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LAND SQUARE FEET</remote-alias>
+              <ordinal>15</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3681</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GROSS SQUARE FEET</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[GROSS SQUARE FEET]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GROSS SQUARE FEET</remote-alias>
+              <ordinal>16</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4212</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YEAR BUILT</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[YEAR BUILT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YEAR BUILT</remote-alias>
+              <ordinal>17</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>224</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TAX CLASS AT TIME OF SALE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TAX CLASS AT TIME OF SALE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TAX CLASS AT TIME OF SALE</remote-alias>
+              <ordinal>18</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BUILDING CLASS AT TIME OF SALE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BUILDING CLASS AT TIME OF SALE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BUILDING CLASS AT TIME OF SALE</remote-alias>
+              <ordinal>19</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>190</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SALE PRICE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SALE PRICE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SALE PRICE</remote-alias>
+              <ordinal>20</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4217</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SALE DATE</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[SALE DATE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SALE DATE</remote-alias>
+              <ordinal>21</ordinal>
+              <family>nyc-rolling-sales.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>493</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:BUILDING CLASS AT PRESENT:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;A7&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;D3&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;G4&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;I3&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;L1&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;P2&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;RB&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;V1&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;C6&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;F2&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;H6&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;K2&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;O2&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;R3&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;S3&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Y1&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;A3&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;CM&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;G0&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;HH&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;K6&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;O6&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;R7&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;T2&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Z3&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;B3&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;D7&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;G8&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;I7&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;M1&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;P8&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;RP&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;V9&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;A9&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;D4&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;G5&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;I4&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;L3&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;P5&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;RG&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;V2&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;A4&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;D0&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;G1&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;HR&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;K7&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;O7&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;R8&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;U1&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Z7&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;C4&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;E9&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;H3&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;J9&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;N9&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;R1&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;S1&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;W8&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;A0&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;C7&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;F4&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;H8&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;K3&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;O3&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;R4&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;S4&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Y3&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;C2&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;E2&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;H1&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;J5&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;M9&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Q9&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;RW&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;W4&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;A5&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;D1&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;G2&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;HS&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;K8&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;O8&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;R9&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;U6&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Z9&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;B9&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;D8&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;G9&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;I9&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;M2&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;P9&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;RR&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;W1&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;C0&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;D9&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;GU&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;J1&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;M3&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Q1&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;RS&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;W2&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;C3&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;E7&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;H2&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;J8&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;N2&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;R0&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;S0&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;W6&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;C5&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;F1&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;H4&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;K1&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;O1&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;R2&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;S2&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;W9&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;B1&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;D5&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;G6&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;I5&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;L8&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;P6&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;RH&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;V3&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;A6&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;D2&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;G3&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;I1&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;K9&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;O9&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;RA&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;V0&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;A1&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;C8&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;F5&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;H9&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;K4&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;O4&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;R5&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;S5&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Z0&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;C1&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;E1&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;GW&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;J4&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;M4&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Q8&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;RT&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;W3&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;B2&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;D6&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;G7&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;I6&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;L9&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;P7&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;RK&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;V6&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;A2&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;C9&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;F9&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;HB&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;K5&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;O5&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;R6&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;S9&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Z2&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='nyc-rolling-sales.csv' id='nyc-rolling-sales.csv_113DD138639F4726BFC9DA9E193EF571'>
+            <properties context=''>
+              <relation connection='textscan.16bfuha05fos3919n6zhu11ysd8z' name='nyc-rolling-sales.csv' table='[nyc-rolling-sales#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='BOROUGH' ordinal='1' />
+                  <column datatype='string' name='NEIGHBORHOOD' ordinal='2' />
+                  <column datatype='string' name='BUILDING CLASS CATEGORY' ordinal='3' />
+                  <column datatype='string' name='TAX CLASS AT PRESENT' ordinal='4' />
+                  <column datatype='integer' name='BLOCK' ordinal='5' />
+                  <column datatype='integer' name='LOT' ordinal='6' />
+                  <column datatype='string' name='EASE-MENT' ordinal='7' />
+                  <column datatype='string' name='BUILDING CLASS AT PRESENT' ordinal='8' />
+                  <column datatype='string' name='ADDRESS' ordinal='9' />
+                  <column datatype='string' name='APARTMENT NUMBER' ordinal='10' />
+                  <column datatype='integer' name='ZIP CODE' ordinal='11' />
+                  <column datatype='integer' name='RESIDENTIAL UNITS' ordinal='12' />
+                  <column datatype='integer' name='COMMERCIAL UNITS' ordinal='13' />
+                  <column datatype='integer' name='TOTAL UNITS' ordinal='14' />
+                  <column datatype='real' name='LAND SQUARE FEET' ordinal='15' />
+                  <column datatype='real' name='GROSS SQUARE FEET' ordinal='16' />
+                  <column datatype='integer' name='YEAR BUILT' ordinal='17' />
+                  <column datatype='integer' name='TAX CLASS AT TIME OF SALE' ordinal='18' />
+                  <column datatype='string' name='BUILDING CLASS AT TIME OF SALE' ordinal='19' />
+                  <column datatype='real' name='SALE PRICE' ordinal='20' />
+                  <column datatype='datetime' name='SALE DATE' ordinal='21' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter1' name='[Action1]'>
+      <source datasource='federated.0josalv1nbn8w511pyedm0hlubg2' type='datasource'>
+        <exclude-sheet name='Sales Bases on Average Price' />
+        <exclude-sheet name='Sales Based on Building Class' />
+        <exclude-sheet name='Top 10 Most Sold Neighborhoods' />
+      </source>
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Top 10 Most Sold Neighborhoods' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='10 Least Sold Neighborhoods'>
+      <repository-location id='10LeastSoldNeighborhoods' path='/t/data301dashboards/workbooks/301Lab10' revision='' site='data301dashboards' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nyc-rolling-sales' name='federated.0josalv1nbn8w511pyedm0hlubg2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0josalv1nbn8w511pyedm0hlubg2'>
+            <column caption='Neighborhood' datatype='string' name='[NEIGHBORHOOD]' role='dimension' type='nominal' />
+            <column caption='Sale Date' datatype='datetime' name='[SALE DATE]' role='dimension' type='ordinal' />
+            <column caption='Sale Price' datatype='real' name='[SALE PRICE]' role='dimension' type='ordinal' />
+            <column-instance column='[SALE PRICE]' derivation='Count' name='[cnt:SALE PRICE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NEIGHBORHOOD]' derivation='None' name='[none:NEIGHBORHOOD:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SALE DATE]' derivation='Year' name='[yr:SALE DATE:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0josalv1nbn8w511pyedm0hlubg2].[none:NEIGHBORHOOD:nk]' context='true'>
+            <groupfilter count='10' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([SALE PRICE])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:NEIGHBORHOOD:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0josalv1nbn8w511pyedm0hlubg2].[yr:SALE DATE:ok]' filter-group='3'>
+            <groupfilter function='level-members' level='[yr:SALE DATE:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0josalv1nbn8w511pyedm0hlubg2].[none:NEIGHBORHOOD:nk]</column>
+            <column>[federated.0josalv1nbn8w511pyedm0hlubg2].[yr:SALE DATE:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d5b7d0' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0josalv1nbn8w511pyedm0hlubg2].[cnt:SALE PRICE:qk]</rows>
+        <cols>[federated.0josalv1nbn8w511pyedm0hlubg2].[none:NEIGHBORHOOD:nk]</cols>
+      </table>
+      <simple-id uuid='{C798D249-76A0-4610-9D87-4CCE43ED0BAE}' />
+    </worksheet>
+    <worksheet name='Gross Area(sq. ft) of NYC Neighborhoods'>
+      <repository-location id='GrossAreasq_ftofNYCNeighborhoods' path='/t/data301dashboards/workbooks/301Lab10' revision='' site='data301dashboards' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nyc-rolling-sales' name='federated.0josalv1nbn8w511pyedm0hlubg2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0josalv1nbn8w511pyedm0hlubg2'>
+            <column caption='Gross Square Feet' datatype='real' name='[GROSS SQUARE FEET]' role='dimension' type='ordinal' />
+            <column caption='Neighborhood' datatype='string' name='[NEIGHBORHOOD]' role='dimension' type='nominal' />
+            <column caption='Sale Price' datatype='real' name='[SALE PRICE]' role='dimension' type='ordinal' />
+            <column-instance column='[SALE PRICE]' derivation='Avg' name='[avg:SALE PRICE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GROSS SQUARE FEET]' derivation='None' name='[none:GROSS SQUARE FEET:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[NEIGHBORHOOD]' derivation='None' name='[none:NEIGHBORHOOD:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' included-values='in-range'>
+            <min>1.0</min>
+            <max>1209245283.0</max>
+          </filter>
+          <slices>
+            <column>[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0josalv1nbn8w511pyedm0hlubg2].[none:GROSS SQUARE FEET:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ff9da7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0josalv1nbn8w511pyedm0hlubg2].[none:NEIGHBORHOOD:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{45A2D156-2EDD-409A-A571-1C79D1D3F4DA}' />
+    </worksheet>
+    <worksheet name='Introduction'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <annotations>
+          <annotation class='area' id='0' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run fontalignment='0' fontcolor='#000000' fontname='Tableau Bold' fontsize='14'>NYC Property Sales</run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#000000' fontsize='16'>This dataset is a record of every building or building unit (apartment, etc.) sold in the New York City property market over a 12-month period</run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#000000' fontsize='16'>This dataset contains the location, address, type, sale price, and sale date of building units sold. A reference on the trickier fields BOROUGH: A digit code for the borough the property is located in; in order these are Manhattan (1), Bronx (2), Brooklyn (3), Queens (4), and Staten Island (5).</run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#000000' fontsize='16'>The dataset id from Kaggle https://www.kaggle.com/new-york-city/nyc-property-sales</run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#000000' fontsize='16'>This dataset is a concatenated and slightly cleaned-up version of the New York City Department of Finance&apos;s Rolling Sales dataset. https://www1.nyc.gov/site/finance/taxes/property-rolling-sales-data.page</run>
+              <run fontalignment='0'>Æ&#10;</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.00809717'>
+                  <node-reference />
+                </x-coord>
+                <y-coord cell-offset='0.0230769'>
+                  <node-reference />
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.976721'>
+                  <node-reference />
+                </x-coord>
+                <y-coord cell-offset='0.696154'>
+                  <node-reference />
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{4AE6A7B6-5488-4527-B5B1-A8B0396D608B}' />
+    </worksheet>
+    <worksheet name='Sales Based on Building Class'>
+      <repository-location id='SalesBasedonBuildingClass' path='/t/data301dashboards/workbooks/301Lab10' revision='' site='data301dashboards' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nyc-rolling-sales' name='federated.0josalv1nbn8w511pyedm0hlubg2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0josalv1nbn8w511pyedm0hlubg2'>
+            <column caption='Building Class At Present' datatype='string' name='[BUILDING CLASS AT PRESENT]' role='dimension' type='nominal' />
+            <column caption='Sale Price' datatype='real' name='[SALE PRICE]' role='dimension' type='ordinal' />
+            <column-instance column='[SALE PRICE]' derivation='Avg' name='[avg:SALE PRICE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BUILDING CLASS AT PRESENT]' derivation='None' name='[none:BUILDING CLASS AT PRESENT:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' filter-group='4' included-values='in-range-or-null'>
+            <min>0.0</min>
+            <max>470550044.80000001</max>
+          </filter>
+          <slices>
+            <column>[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' />
+              <color column='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' />
+              <text column='[federated.0josalv1nbn8w511pyedm0hlubg2].[none:BUILDING CLASS AT PRESENT:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{15983502-1517-4247-AACE-144B2CE478C2}' />
+    </worksheet>
+    <worksheet name='Sales Bases on Average Price'>
+      <repository-location id='SalesBasesonAveragePrice' path='/t/data301dashboards/workbooks/301Lab10' revision='' site='data301dashboards' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nyc-rolling-sales' name='federated.0josalv1nbn8w511pyedm0hlubg2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0josalv1nbn8w511pyedm0hlubg2'>
+            <column caption='Neighborhood' datatype='string' name='[NEIGHBORHOOD]' role='dimension' type='nominal' />
+            <column caption='Sale Price' datatype='real' name='[SALE PRICE]' role='dimension' type='ordinal' />
+            <column-instance column='[SALE PRICE]' derivation='Avg' name='[avg:SALE PRICE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NEIGHBORHOOD]' derivation='None' name='[none:NEIGHBORHOOD:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' filter-group='4' included-values='in-range-or-null'>
+            <min>0.0</min>
+            <max>470550044.80000001</max>
+          </filter>
+          <slices>
+            <column>[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' />
+              <color column='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' />
+              <text column='[federated.0josalv1nbn8w511pyedm0hlubg2].[none:NEIGHBORHOOD:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{097C33E5-6017-4902-8459-6EDA2236DBD8}' />
+    </worksheet>
+    <worksheet name='Top 10 Most Sold Neighborhoods'>
+      <repository-location id='Top10MostSoldNeighborhoods' path='/t/data301dashboards/workbooks/301Lab10' revision='' site='data301dashboards' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nyc-rolling-sales' name='federated.0josalv1nbn8w511pyedm0hlubg2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0josalv1nbn8w511pyedm0hlubg2'>
+            <column caption='Neighborhood' datatype='string' name='[NEIGHBORHOOD]' role='dimension' type='nominal' />
+            <column caption='Sale Date' datatype='datetime' name='[SALE DATE]' role='dimension' type='ordinal' />
+            <column caption='Sale Price' datatype='real' name='[SALE PRICE]' role='dimension' type='ordinal' />
+            <column-instance column='[SALE PRICE]' derivation='Count' name='[cnt:SALE PRICE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NEIGHBORHOOD]' derivation='None' name='[none:NEIGHBORHOOD:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SALE DATE]' derivation='Year' name='[yr:SALE DATE:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0josalv1nbn8w511pyedm0hlubg2].[none:NEIGHBORHOOD:nk]' context='true'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([SALE PRICE])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:NEIGHBORHOOD:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0josalv1nbn8w511pyedm0hlubg2].[yr:SALE DATE:ok]' filter-group='3'>
+            <groupfilter function='level-members' level='[yr:SALE DATE:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0josalv1nbn8w511pyedm0hlubg2].[none:NEIGHBORHOOD:nk]</column>
+            <column>[federated.0josalv1nbn8w511pyedm0hlubg2].[yr:SALE DATE:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#72b966' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0josalv1nbn8w511pyedm0hlubg2].[cnt:SALE PRICE:qk]</rows>
+        <cols>[federated.0josalv1nbn8w511pyedm0hlubg2].[none:NEIGHBORHOOD:nk]</cols>
+      </table>
+      <simple-id uuid='{2DE08757-F753-4B09-8F54-C2CEEFDA8737}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <repository-location id='Dashboard1' path='/t/data301dashboards/workbooks/301Lab10' revision='' site='data301dashboards' />
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='nyc-rolling-sales' name='federated.0josalv1nbn8w511pyedm0hlubg2' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0josalv1nbn8w511pyedm0hlubg2'>
+        <column caption='Sale Date' datatype='datetime' name='[SALE DATE]' role='dimension' type='ordinal' />
+        <column caption='Sale Price' datatype='real' name='[SALE PRICE]' role='dimension' type='ordinal' />
+        <column-instance column='[SALE PRICE]' derivation='Avg' name='[avg:SALE PRICE:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[SALE DATE]' derivation='Year' name='[yr:SALE DATE:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='7' param='horz' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98000' id='5' w='89700' x='800' y='1000'>
+              <zone h='28500' id='3' name='Top 10 Most Sold Neighborhoods' w='48500' x='42000' y='10125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='25000' id='9' name='10 Least Sold Neighborhoods' w='48500' x='42000' y='38625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='38625' id='14' name='Sales Based on Building Class' w='41200' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='39875' id='16' name='Sales Bases on Average Price' w='41200' x='800' y='10125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='9125' id='20' w='48500' x='42000' y='1000'>
+                <formatted-text>
+                  <run fontname='Tableau Medium'>This visualizations helps you analyze the top 10 most sold neighborhoods, that means most of the properties sold in NYC are located here. </run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='5750' id='21' w='48500' x='42000' y='63625'>
+                <formatted-text>
+                  <run fontname='Tableau Medium'>This visualizations helps you analyze the top 10 least sold neighborhoods.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='9125' id='22' w='41200' x='800' y='1000'>
+                <formatted-text>
+                  <run>Here you can see which neighborhoods have the highest average rent and as you compare this to other visualizations, it is clear that neighborhoods </run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='21625' id='23' name='Gross Area(sq. ft) of NYC Neighborhoods' w='48500' x='42000' y='69375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='10375' id='25' w='41200' x='800' y='88625'>
+                <formatted-text>
+                  <run fontname='Tableau Regular'>Does Building type affect the price of the property? It does, building type O4 has the highest rent</run>
+                  <run>Æ&#10;</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='8000' id='26' w='48500' x='42000' y='91000'>
+                <formatted-text>
+                  <run fontname='Tableau Medium'>This visualization helps you find the perfect size property based on your budget. Use the slider to limit the price range and find the neighborhoods that fall within that range</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='87' h='98000' id='6' is-fixed='true' param='vert' w='8700' x='90500' y='1000'>
+              <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='11125' id='10' name='10 Least Sold Neighborhoods' param='[federated.0josalv1nbn8w511pyedm0hlubg2].[yr:SALE DATE:ok]' w='8700' x='90500' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='8625' id='12' name='Sales Based on Building Class' param='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' show-domain='false' show-null-ctrls='false' w='8700' x='90500' y='12125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='8125' id='15' name='Sales Based on Building Class' pane-specification-id='0' param='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' w='8700' x='90500' y='20750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='8125' id='17' name='Sales Bases on Average Price' pane-specification-id='0' param='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' w='8700' x='90500' y='28875'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='8625' id='24' name='Gross Area(sq. ft) of NYC Neighborhoods' param='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' show-domain='false' show-null-ctrls='false' w='8700' x='90500' y='37000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1850' minheight='1850' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='34' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='33' param='vert' w='98400' x='800' y='1000'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='9125' id='22' w='41200' x='800' y='1000'>
+                  <formatted-text>
+                    <run>Here you can see which neighborhoods have the highest average rent and as you compare this to other visualizations, it is clear that neighborhoods </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='9125' id='20' w='48500' x='42000' y='1000'>
+                  <formatted-text>
+                    <run fontname='Tableau Medium'>This visualizations helps you analyze the top 10 most sold neighborhoods, that means most of the properties sold in NYC are located here. </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39875' id='16' is-fixed='true' name='Sales Bases on Average Price' w='41200' x='800' y='10125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='8125' id='17' name='Sales Bases on Average Price' pane-specification-id='0' param='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' w='8700' x='90500' y='28875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='220' h='28500' id='3' is-fixed='true' name='Top 10 Most Sold Neighborhoods' w='48500' x='42000' y='10125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='11125' id='10' mode='checkdropdown' name='10 Least Sold Neighborhoods' param='[federated.0josalv1nbn8w511pyedm0hlubg2].[yr:SALE DATE:ok]' w='8700' x='90500' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='192' h='25000' id='9' is-fixed='true' name='10 Least Sold Neighborhoods' w='48500' x='42000' y='38625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='8625' id='12' name='Sales Based on Building Class' param='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' show-domain='false' show-null-ctrls='false' w='8700' x='90500' y='12125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38625' id='14' is-fixed='true' name='Sales Based on Building Class' w='41200' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='8125' id='15' name='Sales Based on Building Class' pane-specification-id='0' param='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' w='8700' x='90500' y='20750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='5750' id='21' w='48500' x='42000' y='63625'>
+                  <formatted-text>
+                    <run fontname='Tableau Medium'>This visualizations helps you analyze the top 10 least sold neighborhoods.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='8625' id='24' name='Gross Area(sq. ft) of NYC Neighborhoods' param='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' show-domain='false' show-null-ctrls='false' w='8700' x='90500' y='37000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='165' h='21625' id='23' is-fixed='true' name='Gross Area(sq. ft) of NYC Neighborhoods' w='48500' x='42000' y='69375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='10375' id='25' w='41200' x='800' y='88625'>
+                  <formatted-text>
+                    <run fontname='Tableau Regular'>Does Building type affect the price of the property? It does, building type O4 has the highest rent</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='8000' id='26' w='48500' x='42000' y='91000'>
+                  <formatted-text>
+                    <run fontname='Tableau Medium'>This visualization helps you find the perfect size property based on your budget. Use the slider to limit the price range and find the neighborhoods that fall within that range</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AA84F87F-D863-4068-9B14-F78CB67F8CFA}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Introduction'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D5AE4EAB-4671-4276-A4B4-3681B20C7BB7}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Top 10 Most Sold Neighborhoods'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0josalv1nbn8w511pyedm0hlubg2].[yr:SALE DATE:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1BA4E3D9-5C16-46C2-91FB-E2237077A3A8}' />
+    </window>
+    <window class='worksheet' name='10 Least Sold Neighborhoods'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0josalv1nbn8w511pyedm0hlubg2].[yr:SALE DATE:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{784DA4DF-6DBF-40A6-93ED-34A39D9E0930}' />
+    </window>
+    <window class='worksheet' name='Sales Bases on Average Price'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{54E096BA-AD27-42FD-BBA6-FBC907993FB2}' />
+    </window>
+    <window class='worksheet' name='Gross Area(sq. ft) of NYC Neighborhoods'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D6E20010-817B-4F32-AA1D-50DD08D19B12}' />
+    </window>
+    <window class='worksheet' name='Sales Based on Building Class'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.0josalv1nbn8w511pyedm0hlubg2].[avg:SALE PRICE:qk]' show-title='false' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D7D3D75D-9383-47DE-A86D-6D17FB73709E}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='10 Least Sold Neighborhoods'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Gross Area(sq. ft) of NYC Neighborhoods' />
+        <viewpoint name='Sales Based on Building Class' />
+        <viewpoint name='Sales Bases on Average Price' />
+        <viewpoint name='Top 10 Most Sold Neighborhoods'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='25' />
+      <simple-id uuid='{4A7E0264-60CD-4641-AC57-D0F763133316}' />
+    </window>
+  </windows>
+</workbook>
